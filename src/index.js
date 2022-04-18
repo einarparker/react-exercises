@@ -1,13 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-const name = "Przemek"
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const name = "Einar Parker";
+const date = new Date();
+let year = date.getFullYear();
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-  <>
-    <h1>Hello {name}</h1>
+    <>
+      <h1>Created by {name}</h1>
+      <p> @Copyright {year}</p>
     </>
-  </React.StrictMode>
+  </React.StrictMode>,
 );
-
